@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MinuteMate — Turn Messy Notes into Perfect MOM</title>
+  <meta name="description" content="Convert messy meeting notes into clean minutes with decisions, action items, risks, and follow-ups for email + Slack." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="grid"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <span class="logo">MM</span>
+      <span>MinuteMate</span>
+    </a>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="pill" href="#demo">Try Demo</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero reveal">
+      <div class="hero-left">
+        <div class="badge">Meeting Minutes & Action Items Bot</div>
+        <h1>Turn messy meeting notes into <span class="grad">fine MOM</span> in seconds.</h1>
+        <p class="sub">
+          Paste raw bullets or transcript snippets. Get a standardized output with:
+          <strong>Summary, Decisions, Action Items (Owner + Due Date), Risks/Open Questions</strong>, and follow-ups for
+          <strong>Email + Slack</strong>—without making up missing details.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#demo">Convert Notes</a>
+          <a class="btn ghost" href="about.html">How it works</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="stat-num">5</div><div class="stat-label">standard sections</div></div>
+          <div class="stat"><div class="stat-num">0</div><div class="stat-label">fabricated details</div></div>
+          <div class="stat"><div class="stat-num">2</div><div class="stat-label">follow-up formats</div></div>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Student teams</span>
+          <span class="chip">Work meetings</span>
+          <span class="chip">Accountability</span>
+          <span class="chip">Clarity</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="video-shell">
+          <!-- RUBRIC: autoplay + loop + muted + playsinline -->
+          <video class="hero-video" src="assets/hero.mp4" autoplay loop muted playsinline></video>
+          <div class="video-overlay">
+            <div class="pulse"></div>
+            <div class="overlay-text">AI concept video • 5s loop</div>
+          </div>
+        </div>
+
+        <div class="mini-cards">
+          <div class="mini-card">
+            <div class="mini-title">Template-driven</div>
+            <div class="mini-text">Consistent MOM formatting every time.</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-title">Honest output</div>
+            <div class="mini-text">Missing owners/dates are labeled—never guessed.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="demo">
+      <div class="section-head">
+        <h2>Live Demo: Messy Notes → Fine MOM</h2>
+        <p class="muted">
+          This on-page demo is a “wow factor” preview. Your chatbot (embedded below) does the real conversion.
+        </p>
+      </div>
+
+      <div class="demo">
+        <div class="panel">
+          <div class="panel-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="panel-title">Input: Raw Notes</span>
+          </div>
+          <textarea id="rawNotes" spellcheck="false">- Discussed midterm deliverable format
+- Need AI video for Lab 5 (5 sec)
+- Achsah to draft website copy by Friday
+- Decide chatbot embed placement
+- Unsure who owns video generation
+- Next sync Monday 3 PM</textarea>
+          <div class="panel-actions">
+            <button class="btn primary" id="makeMOM">Generate MOM Preview</button>
+            <button class="btn ghost" id="clearNotes">Clear</button>
+          </div>
+          <div class="hint">Tip: add “Owner: ___” or “Due: ___” lines to see them populate.</div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="panel-title">Output: Structured Minutes (Preview)</span>
+          </div>
+          <div class="mom" id="momOut">
+            <div class="mom-empty">
+              <div class="spark"></div>
+              <p class="muted">Click “Generate MOM Preview” to see a polished structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="xfactor">
+        <strong>X-Factor:</strong> Interactive “Messy Notes → Fine MOM” live demo with animated reveal + ambient motion background for a premium, product-launch feel.
+      </div>
+      <div class="foot">
+        <span class="muted">© 2026 MinuteMate</span>
+        <a class="muted link" href="about.html">Read the use case</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- CHATBOT EMBED START -->
+  <!-- Paste your Lab 3 chatbot embed snippet here so it appears on the landing page -->
+  <!-- CHATBOT EMBED END -->
+
+  <script src="script.js"></script>
+</body>
+</html>
