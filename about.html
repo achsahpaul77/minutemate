@@ -61,41 +61,10 @@
         </article>
       </div>
 
-      <section class="section">
-        <div class="section-head">
-          <h2>Example workflow</h2>
-          <p class="muted">A simple way to use it right after a meeting ends.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="step">
-            <div class="step-num">1</div>
-            <div>
-              <div class="step-title">Paste raw notes</div>
-              <div class="muted">Bullets, fragments, or transcript lines.</div>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-num">2</div>
-            <div>
-              <div class="step-title">Get a clean MOM</div>
-              <div class="muted">Same template every time; missing items clearly marked.</div>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <div>
-              <div class="step-title">Send follow-ups</div>
-              <div class="muted">Copy/paste Email and Slack messages in seconds.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cta" style="margin-top:14px;">
-          <a class="btn primary" href="index.html#demo">Try the demo</a>
-          <a class="btn ghost" href="index.html">Back to home</a>
-        </div>
-      </section>
+      <div class="cta" style="margin-top:14px;">
+        <a class="btn primary" href="index.html#demo">Try the demo</a>
+        <a class="btn ghost" href="index.html">Back to home</a>
+      </div>
     </section>
 
     <footer class="footer reveal">
@@ -107,7 +76,10 @@
   </main>
 
   <!-- CHATBOT EMBED START -->
-  <!-- Paste the SAME Lab 3 chatbot embed snippet here too (required for rubric) -->
+  <script>
+    window.chtlConfig = { chatbotId: "8342547412" }
+  </script>
+  <script async data-id="8342547412" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
   <!-- CHATBOT EMBED END -->
 
   <script src="script.js"></script>
